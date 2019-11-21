@@ -1,0 +1,12 @@
+.idea/
+.env
+dist/
+node_modules/
+src/**/*.jsx
+tests/__coverage__/
+tests/**/*.jsx
+webpack-bundle-analyzer.html
+package-lock.json
+combined.log
+debug.log
+docker-mongo.err
