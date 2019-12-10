@@ -1,13 +1,13 @@
-import bodyParser from "body-parser";
-import compression from "compression";
-import cookieParser from "cookie-parser";
-import cors from "cors";
 import express from "express";
 import helmet from "helmet";
 import rateLimit from "express-rate-limit";
 
+import { CronJob } from "cron";
+import fetch from "node-fetch";
+
 import logger from "./logger";
 import commonRoutes from "./routes";
+import { generate } from "./generator";
 
 // Setup an app
 const app = express();
@@ -21,38 +21,27 @@ app.use(new rateLimit({
 // Add some security
 app.use(helmet());
 
-// Enable CORS
-app.use(cors());
-
-// Add some compression
-app.use(compression());
-
-// Cookie Parser
-app.use(cookieParser());
-
 // Log before the routes
 app.use(logger);
 
 // Body Parser
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 // Routes
 app.use(commonRoutes);
 
-app.use((_req, res, next) => {
-    res.status(404);
-    next();
-});
+new CronJob("* * * * * *", async () => {
+    const stub = generate();
 
-// TODO: log errors after the routes
-
-// Debug redir to /
-if (process.env.NODE_ENV !== "production") {
-    app.use((_req, res, next) => {
-        res.redirect("/");
-        next();
-    });
-}
+    const res = await fetch("http://localhost:3000/serverStub", {
+      method: "POST",
+      body: JSON.stringify(stub),
+      headers: { "Content-Type": "application/json" }
+    })
+      .then(() => {})
+      .catch(() => {});
+  }, null, true, "America/Los_Angeles"
+);
 
 export default app;

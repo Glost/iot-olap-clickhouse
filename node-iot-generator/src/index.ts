@@ -1,6 +1,5 @@
 import server from "./server";
-import * as env from "./env";
 
-server.listen(env.PORT, () => {
-    console.log(`Express web server started: http://localhost:${env.PORT}`);
+server.listen(3000, () => {
+    console.log(`Express web server started: http://localhost:3000`);
 });
