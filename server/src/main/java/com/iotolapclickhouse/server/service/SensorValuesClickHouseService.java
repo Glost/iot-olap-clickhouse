@@ -30,9 +30,9 @@ public class SensorValuesClickHouseService {
 
     private static final Logger log = LoggerFactory.getLogger(SensorValuesClickHouseService.class);
 
-    private static final String CREATE_TABLE_SQL_PATH = "db/clickhouse/create-sensor-values-table.sql";
+    private static final String CREATE_TABLE_SQL_PATH = "/db/clickhouse/create-sensor-values-table.sql";
 
-    private static final String INSERT_INTO_SQL_PATH = "db/clickhouse/insert-into-sensor-values.sql";
+    private static final String INSERT_INTO_SQL_PATH = "/db/clickhouse/insert-into-sensor-values.sql";
 
     private final ClickHouseConnection clickHouseConnection;
 
@@ -97,7 +97,8 @@ public class SensorValuesClickHouseService {
 
     private String readSql(String sqlPath) {
         try {
-            InputStream inputStream = Optional.ofNullable(ClassLoader.getSystemResourceAsStream(sqlPath))
+            InputStream inputStream = Optional.ofNullable(SensorValuesClickHouseService.class
+                    .getResourceAsStream(sqlPath))
                     .orElseThrow(() -> new FileNotFoundException("The resource " + sqlPath + " was not found"));
             return IOUtils.toString(inputStream, StandardCharsets.UTF_8);
         } catch (IOException e) {
