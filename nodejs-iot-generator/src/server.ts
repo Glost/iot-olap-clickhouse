@@ -2,12 +2,8 @@ import express from "express";
 import helmet from "helmet";
 import rateLimit from "express-rate-limit";
 
-import { CronJob } from "cron";
-import fetch from "node-fetch";
-
 import logger from "./logger";
 import commonRoutes from "./routes";
-import { generate } from "./generator";
 
 // Setup an app
 const app = express();
@@ -30,18 +26,5 @@ app.use(express.urlencoded({ extended: true }));
 
 // Routes
 app.use(commonRoutes);
-
-new CronJob("* * * * * *", async () => {
-    const stub = generate();
-
-    const res = await fetch("http://localhost:3000/serverStub", {
-      method: "POST",
-      body: JSON.stringify(stub),
-      headers: { "Content-Type": "application/json" }
-    })
-      .then(() => {})
-      .catch(() => {});
-  }, null, true, "America/Los_Angeles"
-);
 
 export default app;

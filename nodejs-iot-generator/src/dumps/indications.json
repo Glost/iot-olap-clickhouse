@@ -1,0 +1,56 @@
+{
+    "1": {
+        "air_temperature": {
+            "value": 17.797178453312167,
+            "leftBoundary": 10,
+            "rightBoundary": 20
+        },
+        "air_humidity": {
+            "value": 65.90983487544835,
+            "leftBoundary": 60,
+            "rightBoundary": 80
+        },
+        "wind_speed": {
+            "value": 5.665254141806955,
+            "leftBoundary": 2,
+            "rightBoundary": 7
+        },
+        "is_raining": {
+            "value": true,
+            "leftBoundary": false,
+            "rightBoundary": true
+        },
+        "illuminance": {
+            "value": 4982.000589459057,
+            "leftBoundary": 4700,
+            "rightBoundary": 5100
+        }
+    },
+    "2": {
+        "air_temperature": {
+            "value": 13.12735988887968,
+            "leftBoundary": 10,
+            "rightBoundary": 20
+        },
+        "air_humidity": {
+            "value": 70.40309010914189,
+            "leftBoundary": 60,
+            "rightBoundary": 80
+        },
+        "wind_speed": {
+            "value": 5.214127544536696,
+            "leftBoundary": 2,
+            "rightBoundary": 7
+        },
+        "is_raining": {
+            "value": true,
+            "leftBoundary": false,
+            "rightBoundary": true
+        },
+        "illuminance": {
+            "value": 4885.620759020712,
+            "leftBoundary": 4700,
+            "rightBoundary": 5100
+        }
+    }
+}

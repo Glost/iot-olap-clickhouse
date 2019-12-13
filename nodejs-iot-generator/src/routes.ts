@@ -1,8 +1,4 @@
-import path from "path";
 import { Router } from "express";
-
-import { generate } from "./generator";
-
 const commonRoutes = Router();
 
 // Common
@@ -16,12 +12,12 @@ commonRoutes.get("/ping", (_req, res) => {
 
 // Specific
 commonRoutes.get("/generate", (_req, res) => {
-  res.status(200).send(generate());
+  res.status(200).send("not implemented");
 });
 
 commonRoutes.post("/serverStub", (req, res) => {
-  console.log("data received: ", req.body);
-  res.status(200);
+  console.log("data received: ", req.body[0]);
+  res.status(200).send("ok");
 });
 
 export default commonRoutes;
