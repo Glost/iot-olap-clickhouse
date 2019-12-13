@@ -1,0 +1,4 @@
+databaseChangeLog:
+  - include:
+      file: migrations/2019-12-08-add-main-tables.sql
+      relativeToChangelogFile: true
