@@ -7,12 +7,16 @@ import com.iotolapclickhouse.server.model.Coordinates;
 import com.iotolapclickhouse.server.model.entity.ScheduledPushingDataToClickHouseLog;
 import com.iotolapclickhouse.server.model.entity.SensorValues;
 import com.iotolapclickhouse.server.model.entity.SensorValuesKey;
+import com.iotolapclickhouse.server.model.request.CoordinateInterval;
 import com.iotolapclickhouse.server.model.request.GetAggregatedDataRequest;
 import com.iotolapclickhouse.server.model.request.PushDataRequest;
+import com.iotolapclickhouse.server.model.request.TimestampInterval;
 import com.iotolapclickhouse.server.model.request.Values;
 import com.iotolapclickhouse.server.model.response.GetAggregatedDataResponse;
 import com.iotolapclickhouse.server.repository.ScheduledPushingDataToClickHouseLogRepository;
 import com.iotolapclickhouse.server.repository.SensorValuesRepository;
+import com.iotolapclickhouse.server.util.DateTimeUtil;
+import org.apache.commons.collections4.CollectionUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +25,9 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.sql.SQLException;
 import java.time.OffsetDateTime;
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.stream.Collectors;
 
 @Service
 public class SensorValuesService {
@@ -59,6 +65,16 @@ public class SensorValuesService {
 
     public GetAggregatedDataResponse getAggregatedData(GetAggregatedDataRequest request) {
         log.info("Handling GetAggregatedDataRequest: {}", request);
+
+        Collection<String> errors = validateIntervals(request);
+
+        if (!errors.isEmpty()) {
+            return new GetAggregatedDataResponse(
+                    false,
+                    "There were some errors:\n" + String.join("\n", errors),
+                    null,
+                    null);
+        }
 
         try {
             return clickHouseService.getAggregatedDataFromClickHouse(request);
@@ -117,5 +133,36 @@ public class SensorValuesService {
                 coordinates.getAltitude(),
                 request.getTimestamp()
         );
+    }
+
+    private Collection<String> validateIntervals(GetAggregatedDataRequest request) {
+        Collection<String> errors = new ArrayList<>();
+
+        CollectionUtils.emptyIfNull(request.getLatitudeIntervals())
+                .forEach(coordinateInterval -> validateCoordinateInterval(coordinateInterval, errors));
+        CollectionUtils.emptyIfNull(request.getLongitudeIntervals())
+                .forEach(coordinateInterval -> validateCoordinateInterval(coordinateInterval, errors));
+        CollectionUtils.emptyIfNull(request.getAltitudeIntervals())
+                .forEach(coordinateInterval -> validateCoordinateInterval(coordinateInterval, errors));
+
+        validateTimestampInterval(request.getTimestampInterval(), errors);
+
+        return errors;
+    }
+
+    private void validateCoordinateInterval(CoordinateInterval coordinateInterval, Collection<String> errors) {
+        if (coordinateInterval.getTo() < coordinateInterval.getFrom()) {
+            errors.add(String.format("coordinateInterval.to [%f] should be not less than coordinateInterval.from [%f]",
+                    coordinateInterval.getTo(), coordinateInterval.getFrom()));
+        }
+    }
+
+    private void validateTimestampInterval(TimestampInterval timestampInterval, Collection<String> errors) {
+        if (timestampInterval.getTo().isBefore(timestampInterval.getFrom())) {
+            errors.add(String.format("timestampInterval.to [%s] should be not less than timestampInterval.from [%s]",
+                    timestampInterval.getTo().format(DateTimeUtil.DATE_TIME_FORMATTER),
+                    timestampInterval.getFrom().format(DateTimeUtil.DATE_TIME_FORMATTER)
+            ));
+        }
     }
 }

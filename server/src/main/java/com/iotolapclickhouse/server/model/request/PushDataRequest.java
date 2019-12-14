@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.iotolapclickhouse.server.model.Coordinates;
+import com.iotolapclickhouse.server.util.DateTimeUtil;
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
@@ -21,7 +22,7 @@ public class PushDataRequest {
     private final Values values;
 
     @NotNull
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss.SSSZ")
+    @JsonFormat(pattern = DateTimeUtil.DATE_TIME_PATTERN)
     private final OffsetDateTime timestamp;
 
     @JsonCreator

@@ -3,6 +3,7 @@ package com.iotolapclickhouse.server.model.request;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.iotolapclickhouse.server.util.DateTimeUtil;
 
 import javax.validation.constraints.NotNull;
 import java.time.OffsetDateTime;
@@ -11,11 +12,11 @@ import java.util.Objects;
 public class TimestampInterval {
 
     @NotNull
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss.SSSZ")
+    @JsonFormat(pattern = DateTimeUtil.DATE_TIME_PATTERN)
     private final OffsetDateTime from;
 
     @NotNull
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss.SSSZ")
+    @JsonFormat(pattern = DateTimeUtil.DATE_TIME_PATTERN)
     private final OffsetDateTime to;
 
     @JsonCreator
