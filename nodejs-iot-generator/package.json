@@ -41,6 +41,7 @@
         "moment": "^2.24.0",
         "query-string": "^6.8.3",
         "request": "^2.88.0",
+        "requestretry": "^4.0.2",
         "winston": "^3.2.1"
     },
     "devDependencies": {
@@ -52,9 +53,10 @@
         "@types/express-rate-limit": "^3.3.2",
         "@types/express-winston": "^3.0.4",
         "@types/helmet": "0.0.44",
-        "@types/request": "^2.48.3",
         "@types/jest": "^24.0.18",
         "@types/node": "^12.7.5",
+        "@types/request": "^2.48.3",
+        "@types/requestretry": "^1.12.5",
         "jest": "^24.9.0",
         "nodemon": "^1.19.2",
         "ts-node": "^8.4.1",

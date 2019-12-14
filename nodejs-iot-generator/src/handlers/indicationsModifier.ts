@@ -19,7 +19,6 @@ export const modifyIndication = (indication: Indication): Indication => {
 // Rain state should not be changed frequently, (3%/2 from normal distribution?) for its change
 const processBoolean = (factor: IndicationValue<boolean>): IndicationValue<boolean> => {
     const rand = Math.random();
-    console.log("random factor: ", rand);
 
     return rand >= 0.97 ?
         {...factor, value: !factor.value} :

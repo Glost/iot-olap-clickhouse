@@ -37,3 +37,6 @@ export const updateIndications = (previousIndications: IndicationsMap): Indicati
 
     return newIndications;
 };
+
+export const updateIndicationsIndex = (previousIndications: IndicationsMap, index: string) =>
+    ({...previousIndications, [index]: modifyIndication(previousIndications[index])});

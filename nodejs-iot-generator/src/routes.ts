@@ -2,7 +2,12 @@ import { Router } from "express";
 
 import { getSensorsFromDumpSync } from "./handlers/sensors";
 import { mergeSensorsWithIndications } from "./handlers/requestFormatter";
-import { getIndicationsFromDumpSync, updateIndications, dumpIndicationsSync } from "./handlers/indications";
+import {
+  getIndicationsFromDumpSync,
+  updateIndications,
+  updateIndicationsIndex,
+  dumpIndicationsSync
+ } from "./handlers/indications";
 
 const commonRoutes = Router();
 
@@ -15,12 +20,33 @@ commonRoutes.get("/ping", (_req, res) => {
 });
 
 commonRoutes.post("/pushData", (req, res) => {
-  console.log("data received, head element: ", req.body[0]);
+  // Uncomment to debug main server /pushData method mock
+  // console.log("data received, head element: ", req.body);
   res.status(200).send();
 });
 
-// Trigger indication poll manually
-commonRoutes.get("/poll", (_req, res) => {
+// Trigger indication poll for random sensor manually
+commonRoutes.get("/pollRandomSensor", (_req, res) => {
+  try {
+    const SENSORS = getSensorsFromDumpSync();
+    const INDICATIONS = getIndicationsFromDumpSync();
+
+    // Random sensorId from 0 to last
+    const randomSensorId = Math.floor(Math.random() * Object.keys(SENSORS).length).toString();
+
+    const updatedIndications = updateIndicationsIndex(INDICATIONS, randomSensorId);
+    const requestBody = mergeSensorsWithIndications(SENSORS, updatedIndications)[randomSensorId];
+
+    dumpIndicationsSync(updatedIndications);
+    res.status(200).send(requestBody);
+  } catch (error) {
+    console.error(error);
+    res.status(500).send("500: internal server error");
+  }
+});
+
+// Trigger indication poll for all sensors manually
+commonRoutes.get("/pollAllSensors", (_req, res) => {
   try {
     const SENSORS = getSensorsFromDumpSync();
     const INDICATIONS = getIndicationsFromDumpSync();
@@ -31,7 +57,8 @@ commonRoutes.get("/poll", (_req, res) => {
     dumpIndicationsSync(updatedIndications);
     res.status(200).send(requestBody);
   } catch (error) {
-    res.status(503).send("internal server error");
+    console.error(error);
+    res.status(500).send("500: internal server error");
   }
 });
 
