@@ -33,7 +33,7 @@ public class GetAggregatedDataResponse {
         this.sensorAggregatedValues = sensorAggregatedValues;
     }
 
-    public Boolean getSuccess() {
+    public Boolean getIsSuccess() {
         return isSuccess;
     }
 
