@@ -17,7 +17,8 @@ server.listen(3000, () => {
         const requestBody = mergeSensorsWithIndications(SENSORS, updatedIndications);
 
         request.post({
-            url: "http://localhost:3000/serverStub",
+            // url: "http://84.201.158.2/pushData",
+            url: "http://localhost:3000/pushData",
             json: true,
             body: requestBody
         }, (err) => {
@@ -27,9 +28,10 @@ server.listen(3000, () => {
 
             INDICATIONS = updatedIndications;
             dumpIndicationsSync(updatedIndications);
+
             console.log("sended");
         });
     }, null, true, "America/Los_Angeles");
 
-    console.log(`Express web server started: http://localhost:3000`);
+    console.log(`Express web server started. Port: 3000`);
 });

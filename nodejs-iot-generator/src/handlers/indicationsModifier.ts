@@ -5,21 +5,26 @@ export const modifyIndication = (indication: Indication): Indication => {
 
     for (const [key, factor] of Object.entries(indication)) {
         if (typeof factor.value === "boolean") {
-            newIndication[key] = processBoolean(<any>factor);
+            newIndication[key] = processBoolean(<IndicationValue<boolean>>factor);
         }
 
         if (typeof factor.value === "number") {
-            newIndication[key] = processNumber(<any>factor);
+            newIndication[key] = processNumber(<IndicationValue<number>>factor);
         }
     }
 
     return newIndication;
 };
 
-// Rain state should not be changed frequently, 5% for its change
-const processBoolean = (factor: IndicationValue<boolean>): IndicationValue<boolean> => Math.random() >= 0.95 ?
-    {...factor} :
-    {...factor, value: !factor.value};
+// Rain state should not be changed frequently, (3%/2 from normal distribution?) for its change
+const processBoolean = (factor: IndicationValue<boolean>): IndicationValue<boolean> => {
+    const rand = Math.random();
+    console.log("random factor: ", rand);
+
+    return rand >= 0.97 ?
+        {...factor, value: !factor.value} :
+        {...factor};
+};
 
 const processNumber = (factor: IndicationValue<number>): IndicationValue<number> => {
     const {value, leftBoundary, rightBoundary} = factor;
