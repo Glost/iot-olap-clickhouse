@@ -35,7 +35,7 @@ server.listen(3000, () => {
             body: requestBody,
 
             maxAttempts: 3,   // try 3 times
-            retryDelay: 300,  // wait for 200ms before trying again
+            retryDelay: 300,  // wait for 300ms before trying again
         }, (err) => {
             if (err) {
                  return console.warn(err);
