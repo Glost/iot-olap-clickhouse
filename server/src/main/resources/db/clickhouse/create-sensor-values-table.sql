@@ -9,5 +9,5 @@ CREATE TABLE IF NOT EXISTS sensor_values (
     is_raining UInt8,
     illuminance Float64
 ) ENGINE = MergeTree()
-PARTITION BY (toRelativeDayNum(timestamp), toRelativeHourNum(timestamp), toRelativeMinuteNum(timestamp))
-ORDER BY (timestamp, longitude, latitude, altitude);
+PARTITION BY (toStartOfDay(timestamp), toStartOfHour(timestamp), toStartOfMinute(timestamp))
+ORDER BY (timestamp, latitude, longitude, altitude);
