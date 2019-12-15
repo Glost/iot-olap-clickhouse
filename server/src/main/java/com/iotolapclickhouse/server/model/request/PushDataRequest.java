@@ -22,7 +22,7 @@ public class PushDataRequest {
     private final Values values;
 
     @NotNull
-    @JsonFormat(pattern = DateTimeUtil.DATE_TIME_PATTERN)
+    @JsonFormat(pattern = DateTimeUtil.DATE_TIME_REQUEST_PATTERN)
     private final OffsetDateTime timestamp;
 
     @JsonCreator

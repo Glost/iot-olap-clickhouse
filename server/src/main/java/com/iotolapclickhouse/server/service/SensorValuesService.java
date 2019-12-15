@@ -27,7 +27,6 @@ import java.sql.SQLException;
 import java.time.OffsetDateTime;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.stream.Collectors;
 
 @Service
 public class SensorValuesService {
@@ -160,8 +159,8 @@ public class SensorValuesService {
     private void validateTimestampInterval(TimestampInterval timestampInterval, Collection<String> errors) {
         if (timestampInterval.getTo().isBefore(timestampInterval.getFrom())) {
             errors.add(String.format("timestampInterval.to [%s] should be not less than timestampInterval.from [%s]",
-                    timestampInterval.getTo().format(DateTimeUtil.DATE_TIME_FORMATTER),
-                    timestampInterval.getFrom().format(DateTimeUtil.DATE_TIME_FORMATTER)
+                    timestampInterval.getTo().format(DateTimeUtil.DATE_TIME_REQUEST_FORMATTER),
+                    timestampInterval.getFrom().format(DateTimeUtil.DATE_TIME_REQUEST_FORMATTER)
             ));
         }
     }
