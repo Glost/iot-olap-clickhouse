@@ -12,11 +12,11 @@ import java.util.Objects;
 public class TimestampInterval {
 
     @NotNull
-    @JsonFormat(pattern = DateTimeUtil.DATE_TIME_PATTERN)
+    @JsonFormat(pattern = DateTimeUtil.DATE_TIME_REQUEST_PATTERN)
     private final OffsetDateTime from;
 
     @NotNull
-    @JsonFormat(pattern = DateTimeUtil.DATE_TIME_PATTERN)
+    @JsonFormat(pattern = DateTimeUtil.DATE_TIME_REQUEST_PATTERN)
     private final OffsetDateTime to;
 
     @JsonCreator

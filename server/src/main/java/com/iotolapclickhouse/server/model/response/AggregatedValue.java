@@ -1,7 +1,9 @@
 package com.iotolapclickhouse.server.model.response;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.iotolapclickhouse.server.util.DateTimeUtil;
 
 import javax.validation.constraints.NotNull;
 import java.time.OffsetDateTime;
@@ -10,6 +12,7 @@ import java.util.Objects;
 public class AggregatedValue {
 
     @NotNull
+    @JsonFormat(pattern = DateTimeUtil.DATE_TIME_RESPONSE_PATTERN)
     private final OffsetDateTime timestamp;
 
     @NotNull
