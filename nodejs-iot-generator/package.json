@@ -1,0 +1,67 @@
+{
+    "name": "node-iot-generator",
+    "version": "0.0.1",
+    "description": "Generates fake IOT data for main server",
+    "keywords": [
+        "IOT",
+        "Clickhouse",
+        "OLAP"
+    ],
+    "engines": {
+        "node": "v10.16.x",
+        "npm": "6.9.x"
+    },
+    "private": true,
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mvshmakov/iot-olap-clickhouse"
+    },
+    "bugs": {
+        "url": "https://github.com/mvshmakov/iot-olap-clickhouse/issues"
+    },
+    "homepage": "https://iot-olap-clickhouse.herokuapp.com/",
+    "main": "index.ts",
+    "scripts": {
+        "clean": "rm -rfd node_modules dist",
+        "start:dev": "nodemon ./src/index.ts --config ./configs/nodemon.json",
+        "start:debug": "DEBUG='express:*' && npm run start:dev",
+        "start:prod": "pm2 start pm2.prod.config.json",
+        "lint": "tslint './src/**/*.ts*' --format stylish --force --fix",
+        "ncu": "npx npm-check-updates",
+        "ncu:update": "npx npm-check-updates -u",
+        "test": "exit 0 && jest --watch --coverage --config=configs/jest.json"
+    },
+    "dependencies": {
+        "cron": "^1.7.2",
+        "express": "^4.17.1",
+        "express-rate-limit": "^5.0.0",
+        "express-validator": "^6.2.0",
+        "express-winston": "^3.3.0",
+        "helmet": "^3.21.0",
+        "moment": "^2.24.0",
+        "pm2": "^4.2.1",
+        "query-string": "^6.8.3",
+        "request": "^2.88.0",
+        "requestretry": "^4.0.2",
+        "winston": "^3.2.1"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.6.0",
+        "@babel/core": "^7.6.0",
+        "@babel/preset-env": "^7.6.0",
+        "@types/cron": "^1.7.1",
+        "@types/express": "^4.17.1",
+        "@types/express-rate-limit": "^3.3.2",
+        "@types/express-winston": "^3.0.4",
+        "@types/helmet": "0.0.44",
+        "@types/jest": "^24.0.18",
+        "@types/node": "^12.7.5",
+        "@types/request": "^2.48.3",
+        "@types/requestretry": "^1.12.5",
+        "jest": "^24.9.0",
+        "nodemon": "^1.19.2",
+        "ts-node": "^8.4.1",
+        "tslint": "^5.20.0",
+        "typescript": "^3.6.3"
+    }
+}

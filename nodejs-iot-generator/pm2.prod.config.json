@@ -1,0 +1,14 @@
+{
+    "apps" : [{
+        "name": "nodejs-iot-generator",
+        "script": "./src/index.ts",
+        "args": "",
+        "instances": 1,
+        "autorestart": true,
+        "interpreter": "ts-node",
+        "watch": false,
+        "env_production": {
+            "NODE_ENV": "production"
+        }
+    }]
+}
