@@ -29,8 +29,8 @@ server.listen(3000, () => {
         const requestBody = mergeSensorsWithIndications(SENSORS, updatedIndications)[NEXT_SENSOR_TO_POLL];
 
         request.post({
-            // url: "http://localhost:80/pushData",
-            url: "http://localhost:3000/pushData",
+            url: "http://localhost:80/pushData",
+            // url: "http://localhost:3000/pushData",
             json: true,
             body: requestBody,
 
