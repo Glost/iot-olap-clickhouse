@@ -1,17 +1,17 @@
 {
     "0": {
         "air_temperature": {
-            "value": 15.71016326548019,
+            "value": 15.387120464752147,
             "leftBoundary": 10,
             "rightBoundary": 20
         },
         "air_humidity": {
-            "value": 76.120723875198,
+            "value": 66.43762773033855,
             "leftBoundary": 60,
             "rightBoundary": 80
         },
         "wind_speed": {
-            "value": 3.6267843924373944,
+            "value": 4.274091845299301,
             "leftBoundary": 2,
             "rightBoundary": 7
         },
@@ -21,24 +21,24 @@
             "rightBoundary": true
         },
         "illuminance": {
-            "value": 4957.735407504175,
+            "value": 4778.158493861491,
             "leftBoundary": 4700,
             "rightBoundary": 5100
         }
     },
     "1": {
         "air_temperature": {
-            "value": 20.96918073576911,
+            "value": 25.334251675896223,
             "leftBoundary": 15,
             "rightBoundary": 28
         },
         "air_humidity": {
-            "value": 65.05189403403338,
+            "value": 74.88440168953274,
             "leftBoundary": 65,
             "rightBoundary": 85
         },
         "wind_speed": {
-            "value": 1.0190975733015113,
+            "value": 2.1083451430017583,
             "leftBoundary": 0,
             "rightBoundary": 6
         },
@@ -48,24 +48,24 @@
             "rightBoundary": true
         },
         "illuminance": {
-            "value": 4755.187678855614,
+            "value": 4753.222379282431,
             "leftBoundary": 4300,
             "rightBoundary": 5000
         }
     },
     "2": {
         "air_temperature": {
-            "value": 32.094436860185645,
+            "value": 31.428928142572083,
             "leftBoundary": 25,
             "rightBoundary": 35
         },
         "air_humidity": {
-            "value": 36.0963234698431,
+            "value": 43.43343306179755,
             "leftBoundary": 30,
             "rightBoundary": 50
         },
         "wind_speed": {
-            "value": 1.881017801979453,
+            "value": 1.6499606583228346,
             "leftBoundary": 1,
             "rightBoundary": 8
         },
@@ -75,24 +75,24 @@
             "rightBoundary": true
         },
         "illuminance": {
-            "value": 2469.25498681456,
+            "value": 3055.5971485725336,
             "leftBoundary": 2000,
             "rightBoundary": 4000
         }
     },
     "3": {
         "air_temperature": {
-            "value": 24.623137929784654,
+            "value": 26.063356466984406,
             "leftBoundary": 20,
             "rightBoundary": 32
         },
         "air_humidity": {
-            "value": 48.25482701621354,
+            "value": 40.88714743836218,
             "leftBoundary": 32,
             "rightBoundary": 50
         },
         "wind_speed": {
-            "value": 9.384988886948161,
+            "value": 13.676516299068675,
             "leftBoundary": 0,
             "rightBoundary": 15
         },
@@ -102,78 +102,78 @@
             "rightBoundary": true
         },
         "illuminance": {
-            "value": 1523.0467750280602,
+            "value": 1332.666897990413,
             "leftBoundary": 1000,
             "rightBoundary": 3000
         }
     },
     "4": {
         "air_temperature": {
-            "value": 7.577821162875848,
+            "value": 3.2302040384952075,
             "leftBoundary": 0,
             "rightBoundary": 9
         },
         "air_humidity": {
-            "value": 78.12945845723436,
+            "value": 80.12524351350967,
             "leftBoundary": 60,
             "rightBoundary": 92
         },
         "wind_speed": {
-            "value": 2.330629374647734,
+            "value": 3.5458987386332383,
             "leftBoundary": 2,
             "rightBoundary": 4
         },
         "is_raining": {
-            "value": true,
+            "value": false,
             "leftBoundary": false,
             "rightBoundary": true
         },
         "illuminance": {
-            "value": 5425.717195580516,
+            "value": 5660.827361857591,
             "leftBoundary": 5000,
             "rightBoundary": 6500
         }
     },
     "5": {
         "air_temperature": {
-            "value": 3.370455230607967,
+            "value": 2.7052262787174195,
             "leftBoundary": 0,
             "rightBoundary": 5
         },
         "air_humidity": {
-            "value": 41.089964535270965,
+            "value": 40.477527641930166,
             "leftBoundary": 30,
             "rightBoundary": 50
         },
         "wind_speed": {
-            "value": 3.7373192984110175,
+            "value": 3.9021439356101153,
             "leftBoundary": 1,
             "rightBoundary": 4
         },
         "is_raining": {
-            "value": true,
+            "value": false,
             "leftBoundary": false,
             "rightBoundary": true
         },
         "illuminance": {
-            "value": 3009.9876525970317,
+            "value": 3847.711178049521,
             "leftBoundary": 3000,
             "rightBoundary": 5000
         }
     },
     "6": {
         "air_temperature": {
-            "value": 4.853044450324771,
+            "value": 5.134380536019368,
             "leftBoundary": 2,
             "rightBoundary": 10
         },
         "air_humidity": {
-            "value": 26.44515696831103,
+            "value": 28.78215107555558,
             "leftBoundary": 20,
             "rightBoundary": 40
         },
         "wind_speed": {
-            "value": 8.204109584287147,
+            "value": 9.772839454693653,
             "leftBoundary": 7,
             "rightBoundary": 15
         },
@@ -183,24 +183,24 @@
             "rightBoundary": true
         },
         "illuminance": {
-            "value": 3630.5051240775015,
+            "value": 3612.519106672424,
             "leftBoundary": 1000,
             "rightBoundary": 4000
         }
     },
     "7": {
         "air_temperature": {
-            "value": 36.19643207617159,
+            "value": 36.19047769081063,
             "leftBoundary": 25,
             "rightBoundary": 40
         },
         "air_humidity": {
-            "value": 63.821003467941196,
+            "value": 62.822704165493846,
             "leftBoundary": 50,
             "rightBoundary": 70
         },
         "wind_speed": {
-            "value": 6.794208850517949,
+            "value": 7.194334852416621,
             "leftBoundary": 5,
             "rightBoundary": 14
         },
@@ -210,24 +210,24 @@
             "rightBoundary": true
         },
         "illuminance": {
-            "value": 4458.7446668359835,
+            "value": 3928.1792978359776,
             "leftBoundary": 2500,
             "rightBoundary": 4500
         }
     },
     "8": {
         "air_temperature": {
-            "value": 22.138459619190442,
+            "value": 20.873754046516524,
             "leftBoundary": 20,
             "rightBoundary": 26
         },
         "air_humidity": {
-            "value": 29.987811673398003,
+            "value": 33.54611968767739,
             "leftBoundary": 20,
             "rightBoundary": 50
         },
         "wind_speed": {
-            "value": 0.13138188960955063,
+            "value": 0.47116708472800184,
             "leftBoundary": 0,
             "rightBoundary": 3
         },
@@ -237,24 +237,24 @@
             "rightBoundary": true
         },
         "illuminance": {
-            "value": 1123.1297491295545,
+            "value": 960.3732279856409,
             "leftBoundary": 450,
             "rightBoundary": 1235
         }
     },
     "9": {
         "air_temperature": {
-            "value": 11.419879584531571,
+            "value": 11.469217335234275,
             "leftBoundary": 0,
             "rightBoundary": 15
         },
         "air_humidity": {
-            "value": 68.4228914012754,
+            "value": 68.14656842533111,
             "leftBoundary": 60,
             "rightBoundary": 75
         },
         "wind_speed": {
-            "value": 5.041675882963326,
+            "value": 5.335754202093002,
             "leftBoundary": 2,
             "rightBoundary": 6
         },
@@ -264,24 +264,24 @@
             "rightBoundary": true
         },
         "illuminance": {
-            "value": 5345.392664072057,
+            "value": 5385.500267242532,
             "leftBoundary": 5200,
             "rightBoundary": 6001
         }
     },
     "10": {
         "air_temperature": {
-            "value": 24.08502270656813,
+            "value": 21.179442849747133,
             "leftBoundary": 20,
             "rightBoundary": 30
         },
         "air_humidity": {
-            "value": 25.32871493540792,
+            "value": 22.921044906572863,
             "leftBoundary": 20,
             "rightBoundary": 45
         },
         "wind_speed": {
-            "value": 2.035850257211119,
+            "value": 1.6588045081028757,
             "leftBoundary": 0,
             "rightBoundary": 2.5
         },
@@ -291,24 +291,24 @@
             "rightBoundary": true
         },
         "illuminance": {
-            "value": 4150.853198461876,
+            "value": 4456.228284339989,
             "leftBoundary": 4000,
             "rightBoundary": 5100
         }
     },
     "11": {
         "air_temperature": {
-            "value": 3.6897732599984203,
+            "value": 3.5450655423770594,
             "leftBoundary": 3,
             "rightBoundary": 9
         },
         "air_humidity": {
-            "value": 60.07112791361695,
+            "value": 57.64471775898133,
             "leftBoundary": 50,
             "rightBoundary": 70
         },
         "wind_speed": {
-            "value": 3.749401000637027,
+            "value": 3.4766179097603986,
             "leftBoundary": 1,
             "rightBoundary": 5
         },
@@ -318,24 +318,24 @@
             "rightBoundary": true
         },
         "illuminance": {
-            "value": 2685.328633581488,
+            "value": 2647.038584435161,
             "leftBoundary": 2000,
             "rightBoundary": 3000
         }
     },
     "12": {
         "air_temperature": {
-            "value": 17.447084439683564,
+            "value": 16.86196593878562,
             "leftBoundary": 13,
             "rightBoundary": 18
         },
         "air_humidity": {
-            "value": 78.77168678271939,
+            "value": 75.19626976766274,
             "leftBoundary": 70,
             "rightBoundary": 95
         },
         "wind_speed": {
-            "value": 8.126174588832084,
+            "value": 10.58192053889727,
             "leftBoundary": 1,
             "rightBoundary": 14
         },
@@ -345,24 +345,24 @@
             "rightBoundary": true
         },
         "illuminance": {
-            "value": 5726.4652505076565,
+            "value": 5935.986241913633,
             "leftBoundary": 5500,
             "rightBoundary": 6700
         }
     },
     "13": {
         "air_temperature": {
-            "value": 17.703068446016612,
+            "value": 16.865156007117783,
             "leftBoundary": 13,
             "rightBoundary": 20
         },
         "air_humidity": {
-            "value": 41.27751995721245,
+            "value": 42.61144143603689,
             "leftBoundary": 35,
             "rightBoundary": 45
         },
         "wind_speed": {
-            "value": 3.936453760907094,
+            "value": 3.727957729726785,
             "leftBoundary": 3,
             "rightBoundary": 5
         },
@@ -372,24 +372,24 @@
             "rightBoundary": true
         },
         "illuminance": {
-            "value": 6597.621831093499,
+            "value": 6741.090692485102,
             "leftBoundary": 6000,
             "rightBoundary": 7000
         }
     },
     "14": {
         "air_temperature": {
-            "value": 3.8826444480526563,
+            "value": 3.7923623971432345,
             "leftBoundary": 3,
             "rightBoundary": 7
         },
         "air_humidity": {
-            "value": 78.70024092086102,
+            "value": 74.62226000490328,
             "leftBoundary": 70,
             "rightBoundary": 93
         },
         "wind_speed": {
-            "value": 0.09544941533668957,
+            "value": 0.62818187776047,
             "leftBoundary": 0,
             "rightBoundary": 3
         },
@@ -399,7 +399,7 @@
             "rightBoundary": true
         },
         "illuminance": {
-            "value": 5913.141614573947,
+            "value": 6174.506680973849,
             "leftBoundary": 4000,
             "rightBoundary": 6400
         }

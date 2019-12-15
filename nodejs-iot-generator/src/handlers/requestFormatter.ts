@@ -13,9 +13,15 @@ export const mergeSensorsWithIndications = (sensors: SensorsMap, indications: In
     const merged = [];
 
     for (const [index, sensor] of Object.entries(sensors)) {
+        const valuesWithoutBoundaries = {};
+
+        for (const [nameOfIndication, valueObjectOfIndication] of Object.entries(indications[index])) {
+            valuesWithoutBoundaries[nameOfIndication] = valueObjectOfIndication.value;
+        }
+
         merged.push({
             coordinates: sensor,
-            values: indications[index],
+            values: valuesWithoutBoundaries,
             timestamp: moment(new Date(), "yyyy-MM-dd HH:mm:ss.SSSZ"),
         });
     }
