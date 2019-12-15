@@ -277,7 +277,9 @@ public class SensorValuesClickHouseService {
             }
 
             OffsetDateTime timestamp = LocalDateTime.parse(dataRow.get(i++),
-                    DateTimeUtil.DATE_TIME_CLICKHOUSE_FORMATTER).atOffset(OffsetDateTime.now().getOffset());
+                    DateTimeUtil.DATE_TIME_CLICKHOUSE_FORMATTER)
+                    .atZone(clickHouseConnection.getTimeZone().toZoneId())
+                    .toOffsetDateTime();
 
             AggregatedValues aggregatedValues = currentSensorAggregatedValuesElement.getAggregatedValues();
 
