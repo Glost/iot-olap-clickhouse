@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA6B0AB223A6A8280004F7F1 /* GraphElementProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B0AB123A6A8280004F7F1 /* GraphElementProtocol.swift */; };
+		FA6B0AB423A800800004F7F1 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B0AB323A800800004F7F1 /* StartViewController.swift */; };
+		FA6B0AB623A829DF0004F7F1 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B0AB523A829DF0004F7F1 /* UIColor+Extension.swift */; };
+		FA6B0AB923A94FDC0004F7F1 /* StartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B0AB823A94FDC0004F7F1 /* StartTableViewController.swift */; };
+		FA6B0ABB23A950EF0004F7F1 /* TextFieldDatePickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B0ABA23A950EF0004F7F1 /* TextFieldDatePickerCell.swift */; };
+		FA6B0ABD23A950FE0004F7F1 /* TextFieldDatePickerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B0ABC23A950FE0004F7F1 /* TextFieldDatePickerItem.swift */; };
+		FA6B0AC323A957F00004F7F1 /* LabelFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B0AC223A957F00004F7F1 /* LabelFieldCell.swift */; };
+		FA6B0AC523A957FB0004F7F1 /* LabelFieldItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B0AC423A957FB0004F7F1 /* LabelFieldItem.swift */; };
+		FA6B0AC723A9591C0004F7F1 /* ItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B0AC623A9591C0004F7F1 /* ItemProtocol.swift */; };
+		FA6B0AC923A959270004F7F1 /* CellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B0AC823A959270004F7F1 /* CellProtocol.swift */; };
+		FA6B0ACC23A95B500004F7F1 /* ComponentBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B0ACB23A95B500004F7F1 /* ComponentBuilder.swift */; };
+		FA6B0ACE23A95BDA0004F7F1 /* ConstantNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B0ACD23A95BDA0004F7F1 /* ConstantNames.swift */; };
+		FA6B0AD023A95DAE0004F7F1 /* TextFieldPickerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B0ACF23A95DAE0004F7F1 /* TextFieldPickerItem.swift */; };
+		FA6B0AD223A95DB80004F7F1 /* TextFieldPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B0AD123A95DB80004F7F1 /* TextFieldPickerCell.swift */; };
+		FA6B0AD523A96D040004F7F1 /* PickerViewElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B0AD423A96D040004F7F1 /* PickerViewElement.swift */; };
+		FA6B0AD823A9834E0004F7F1 /* TextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B0AD723A9834E0004F7F1 /* TextFieldCell.swift */; };
+		FA6B0ADA23A987980004F7F1 /* TextFieldNumberItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B0AD923A987980004F7F1 /* TextFieldNumberItem.swift */; };
+		FA6B0ADD23A98A7A0004F7F1 /* TextFieldNumberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B0ADC23A98A7A0004F7F1 /* TextFieldNumberCell.swift */; };
+		FA6B0AE023A994450004F7F1 /* ButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B0ADF23A994450004F7F1 /* ButtonItem.swift */; };
+		FA6B0AE223A9944C0004F7F1 /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B0AE123A9944C0004F7F1 /* ButtonCell.swift */; };
+		FACCF95F23A5489C00B3B006 /* NetworkRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACCF95E23A5489C00B3B006 /* NetworkRequestBody.swift */; };
+		FAD1C9DC2396D4C60048E4E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1C9DB2396D4C60048E4E1 /* AppDelegate.swift */; };
+		FAD1C9E42396D4C60048E4E1 /* Clickhouse_Project_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAD1C9E22396D4C60048E4E1 /* Clickhouse_Project_ios.xcdatamodeld */; };
+		FAD1C9E62396D4C70048E4E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD1C9E52396D4C70048E4E1 /* Assets.xcassets */; };
+		FAD1C9E92396D4C70048E4E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD1C9E72396D4C70048E4E1 /* LaunchScreen.storyboard */; };
+		FAD1C9F22396D6B10048E4E1 /* ChooseGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1C9F12396D6B10048E4E1 /* ChooseGraphViewController.swift */; };
+		FAD1C9F72396D9820048E4E1 /* CellFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1C9F62396D9820048E4E1 /* CellFactory.swift */; };
+		FAD1CA002396DC110048E4E1 /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1C9FF2396DC110048E4E1 /* NetworkOperation.swift */; };
+		FAD1CA022396DC470048E4E1 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1CA012396DC470048E4E1 /* NetworkResponse.swift */; };
+		FAD1CA042396DD150048E4E1 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1CA032396DD150048E4E1 /* URL+Extensions.swift */; };
+		FAD1CA0E239AD83A0048E4E1 /* GraphElementModelAvgRain.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1CA0D239AD83A0048E4E1 /* GraphElementModelAvgRain.swift */; };
+		FAD1CA10239CF0AC0048E4E1 /* AggregatedValuesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1CA0F239CF0AC0048E4E1 /* AggregatedValuesModel.swift */; };
+		FAD1CA12239CF1500048E4E1 /* AggregatedGraphModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1CA11239CF1500048E4E1 /* AggregatedGraphModel.swift */; };
+		FAD1CA14239CF1A20048E4E1 /* GraphElementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1CA13239CF1A20048E4E1 /* GraphElementModel.swift */; };
+		FAD1CA16239CF2EC0048E4E1 /* ViewGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1CA15239CF2EC0048E4E1 /* ViewGraphViewController.swift */; };
+		FAD1CA19239CF36C0048E4E1 /* GraphTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1CA18239CF36C0048E4E1 /* GraphTableViewCell.swift */; };
+		FAD1CA1B239CF7700048E4E1 /* GraphViewInCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1CA1A239CF7700048E4E1 /* GraphViewInCell.swift */; };
+		FAD1CA1E239D29260048E4E1 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1CA1D239D29260048E4E1 /* String+Extension.swift */; };
+		FAD1CA22239D3EDD0048E4E1 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1CA21239D3EDD0048E4E1 /* Date+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA6B0AB123A6A8280004F7F1 /* GraphElementProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphElementProtocol.swift; sourceTree = "<group>"; };
+		FA6B0AB323A800800004F7F1 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		FA6B0AB523A829DF0004F7F1 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		FA6B0AB823A94FDC0004F7F1 /* StartTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTableViewController.swift; sourceTree = "<group>"; };
+		FA6B0ABA23A950EF0004F7F1 /* TextFieldDatePickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDatePickerCell.swift; sourceTree = "<group>"; };
+		FA6B0ABC23A950FE0004F7F1 /* TextFieldDatePickerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDatePickerItem.swift; sourceTree = "<group>"; };
+		FA6B0AC223A957F00004F7F1 /* LabelFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelFieldCell.swift; sourceTree = "<group>"; };
+		FA6B0AC423A957FB0004F7F1 /* LabelFieldItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelFieldItem.swift; sourceTree = "<group>"; };
+		FA6B0AC623A9591C0004F7F1 /* ItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemProtocol.swift; sourceTree = "<group>"; };
+		FA6B0AC823A959270004F7F1 /* CellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellProtocol.swift; sourceTree = "<group>"; };
+		FA6B0ACB23A95B500004F7F1 /* ComponentBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentBuilder.swift; sourceTree = "<group>"; };
+		FA6B0ACD23A95BDA0004F7F1 /* ConstantNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantNames.swift; sourceTree = "<group>"; };
+		FA6B0ACF23A95DAE0004F7F1 /* TextFieldPickerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldPickerItem.swift; sourceTree = "<group>"; };
+		FA6B0AD123A95DB80004F7F1 /* TextFieldPickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldPickerCell.swift; sourceTree = "<group>"; };
+		FA6B0AD423A96D040004F7F1 /* PickerViewElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewElement.swift; sourceTree = "<group>"; };
+		FA6B0AD723A9834E0004F7F1 /* TextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCell.swift; sourceTree = "<group>"; };
+		FA6B0AD923A987980004F7F1 /* TextFieldNumberItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldNumberItem.swift; sourceTree = "<group>"; };
+		FA6B0ADC23A98A7A0004F7F1 /* TextFieldNumberCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldNumberCell.swift; sourceTree = "<group>"; };
+		FA6B0ADF23A994450004F7F1 /* ButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonItem.swift; sourceTree = "<group>"; };
+		FA6B0AE123A9944C0004F7F1 /* ButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCell.swift; sourceTree = "<group>"; };
+		FACCF95E23A5489C00B3B006 /* NetworkRequestBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestBody.swift; sourceTree = "<group>"; };
+		FAD1C9D82396D4C60048E4E1 /* Clickhouse-Project-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clickhouse-Project-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAD1C9DB2396D4C60048E4E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAD1C9E32396D4C60048E4E1 /* Clickhouse_Project_ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Clickhouse_Project_ios.xcdatamodel; sourceTree = "<group>"; };
+		FAD1C9E52396D4C70048E4E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAD1C9E82396D4C70048E4E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAD1C9EA2396D4C70048E4E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD1C9F12396D6B10048E4E1 /* ChooseGraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseGraphViewController.swift; sourceTree = "<group>"; };
+		FAD1C9F62396D9820048E4E1 /* CellFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellFactory.swift; sourceTree = "<group>"; };
+		FAD1C9FF2396DC110048E4E1 /* NetworkOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
+		FAD1CA012396DC470048E4E1 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		FAD1CA032396DD150048E4E1 /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
+		FAD1CA0D239AD83A0048E4E1 /* GraphElementModelAvgRain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphElementModelAvgRain.swift; sourceTree = "<group>"; };
+		FAD1CA0F239CF0AC0048E4E1 /* AggregatedValuesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AggregatedValuesModel.swift; sourceTree = "<group>"; };
+		FAD1CA11239CF1500048E4E1 /* AggregatedGraphModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AggregatedGraphModel.swift; sourceTree = "<group>"; };
+		FAD1CA13239CF1A20048E4E1 /* GraphElementModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphElementModel.swift; sourceTree = "<group>"; };
+		FAD1CA15239CF2EC0048E4E1 /* ViewGraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewGraphViewController.swift; sourceTree = "<group>"; };
+		FAD1CA18239CF36C0048E4E1 /* GraphTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphTableViewCell.swift; sourceTree = "<group>"; };
+		FAD1CA1A239CF7700048E4E1 /* GraphViewInCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewInCell.swift; sourceTree = "<group>"; };
+		FAD1CA1D239D29260048E4E1 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		FAD1CA21239D3EDD0048E4E1 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAD1C9D52396D4C60048E4E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA6B0AB023A6A81A0004F7F1 /* GraphModels */ = {
+			isa = PBXGroup;
+			children = (
+				FA6B0AB123A6A8280004F7F1 /* GraphElementProtocol.swift */,
+				FAD1CA13239CF1A20048E4E1 /* GraphElementModel.swift */,
+				FAD1CA0D239AD83A0048E4E1 /* GraphElementModelAvgRain.swift */,
+			);
+			name = GraphModels;
+			sourceTree = "<group>";
+		};
+		FA6B0AB723A94FC60004F7F1 /* StartController */ = {
+			isa = PBXGroup;
+			children = (
+				FA6B0AB823A94FDC0004F7F1 /* StartTableViewController.swift */,
+			);
+			name = StartController;
+			sourceTree = "<group>";
+		};
+		FA6B0ABE23A951860004F7F1 /* LabelFieldComponent */ = {
+			isa = PBXGroup;
+			children = (
+				FA6B0AC423A957FB0004F7F1 /* LabelFieldItem.swift */,
+				FA6B0AC223A957F00004F7F1 /* LabelFieldCell.swift */,
+			);
+			name = LabelFieldComponent;
+			sourceTree = "<group>";
+		};
+		FA6B0ABF23A9518F0004F7F1 /* TextFieldDatePickerComponent */ = {
+			isa = PBXGroup;
+			children = (
+				FA6B0ABC23A950FE0004F7F1 /* TextFieldDatePickerItem.swift */,
+				FA6B0ABA23A950EF0004F7F1 /* TextFieldDatePickerCell.swift */,
+			);
+			name = TextFieldDatePickerComponent;
+			sourceTree = "<group>";
+		};
+		FA6B0ACA23A95B2D0004F7F1 /* TextFieldPickerComponent */ = {
+			isa = PBXGroup;
+			children = (
+				FA6B0ACF23A95DAE0004F7F1 /* TextFieldPickerItem.swift */,
+				FA6B0AD123A95DB80004F7F1 /* TextFieldPickerCell.swift */,
+				FA6B0AD423A96D040004F7F1 /* PickerViewElement.swift */,
+			);
+			name = TextFieldPickerComponent;
+			sourceTree = "<group>";
+		};
+		FA6B0AD323A961740004F7F1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FA6B0AC623A9591C0004F7F1 /* ItemProtocol.swift */,
+				FA6B0AC823A959270004F7F1 /* CellProtocol.swift */,
+				FA6B0ADE23A994270004F7F1 /* ButtonComponent */,
+				FA6B0AD623A9832D0004F7F1 /* TextFieldCellComponent */,
+				FA6B0ADB23A987ED0004F7F1 /* TextFieldNumberComponent */,
+				FA6B0ACA23A95B2D0004F7F1 /* TextFieldPickerComponent */,
+				FA6B0ABF23A9518F0004F7F1 /* TextFieldDatePickerComponent */,
+				FA6B0ABE23A951860004F7F1 /* LabelFieldComponent */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		FA6B0AD623A9832D0004F7F1 /* TextFieldCellComponent */ = {
+			isa = PBXGroup;
+			children = (
+				FA6B0AD723A9834E0004F7F1 /* TextFieldCell.swift */,
+			);
+			name = TextFieldCellComponent;
+			sourceTree = "<group>";
+		};
+		FA6B0ADB23A987ED0004F7F1 /* TextFieldNumberComponent */ = {
+			isa = PBXGroup;
+			children = (
+				FA6B0AD923A987980004F7F1 /* TextFieldNumberItem.swift */,
+				FA6B0ADC23A98A7A0004F7F1 /* TextFieldNumberCell.swift */,
+			);
+			name = TextFieldNumberComponent;
+			sourceTree = "<group>";
+		};
+		FA6B0ADE23A994270004F7F1 /* ButtonComponent */ = {
+			isa = PBXGroup;
+			children = (
+				FA6B0ADF23A994450004F7F1 /* ButtonItem.swift */,
+				FA6B0AE123A9944C0004F7F1 /* ButtonCell.swift */,
+			);
+			name = ButtonComponent;
+			sourceTree = "<group>";
+		};
+		FAD1C9CF2396D4C60048E4E1 = {
+			isa = PBXGroup;
+			children = (
+				FAD1C9DA2396D4C60048E4E1 /* Clickhouse-Project-ios */,
+				FAD1C9D92396D4C60048E4E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAD1C9D92396D4C60048E4E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAD1C9D82396D4C60048E4E1 /* Clickhouse-Project-ios.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAD1C9DA2396D4C60048E4E1 /* Clickhouse-Project-ios */ = {
+			isa = PBXGroup;
+			children = (
+				FAD1CA1C239D29190048E4E1 /* Extensions */,
+				FAD1C9FE2396DC030048E4E1 /* Network */,
+				FAD1C9F52396D9740048E4E1 /* CellFactory */,
+				FAD1C9F02396D6950048E4E1 /* ViewControllers */,
+				FAD1C9DB2396D4C60048E4E1 /* AppDelegate.swift */,
+				FAD1C9E52396D4C70048E4E1 /* Assets.xcassets */,
+				FAD1C9E72396D4C70048E4E1 /* LaunchScreen.storyboard */,
+				FAD1C9EA2396D4C70048E4E1 /* Info.plist */,
+				FAD1C9E22396D4C60048E4E1 /* Clickhouse_Project_ios.xcdatamodeld */,
+			);
+			path = "Clickhouse-Project-ios";
+			sourceTree = "<group>";
+		};
+		FAD1C9F02396D6950048E4E1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA6B0ACD23A95BDA0004F7F1 /* ConstantNames.swift */,
+				FA6B0ACB23A95B500004F7F1 /* ComponentBuilder.swift */,
+				FA6B0AD323A961740004F7F1 /* Components */,
+				FA6B0AB723A94FC60004F7F1 /* StartController */,
+				FAD1CA17239CF33D0048E4E1 /* TableCells */,
+				FAD1C9F12396D6B10048E4E1 /* ChooseGraphViewController.swift */,
+				FAD1CA15239CF2EC0048E4E1 /* ViewGraphViewController.swift */,
+				FA6B0AB323A800800004F7F1 /* StartViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FAD1C9F52396D9740048E4E1 /* CellFactory */ = {
+			isa = PBXGroup;
+			children = (
+				FAD1C9F62396D9820048E4E1 /* CellFactory.swift */,
+			);
+			name = CellFactory;
+			sourceTree = "<group>";
+		};
+		FAD1C9FE2396DC030048E4E1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FA6B0AB023A6A81A0004F7F1 /* GraphModels */,
+				FAD1CA06239AD6550048E4E1 /* GetGraphOperation */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		FAD1CA06239AD6550048E4E1 /* GetGraphOperation */ = {
+			isa = PBXGroup;
+			children = (
+				FAD1C9FF2396DC110048E4E1 /* NetworkOperation.swift */,
+				FAD1CA012396DC470048E4E1 /* NetworkResponse.swift */,
+				FAD1CA0F239CF0AC0048E4E1 /* AggregatedValuesModel.swift */,
+				FAD1CA11239CF1500048E4E1 /* AggregatedGraphModel.swift */,
+				FACCF95E23A5489C00B3B006 /* NetworkRequestBody.swift */,
+			);
+			name = GetGraphOperation;
+			sourceTree = "<group>";
+		};
+		FAD1CA17239CF33D0048E4E1 /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				FAD1CA18239CF36C0048E4E1 /* GraphTableViewCell.swift */,
+				FAD1CA1A239CF7700048E4E1 /* GraphViewInCell.swift */,
+			);
+			name = TableCells;
+			sourceTree = "<group>";
+		};
+		FAD1CA1C239D29190048E4E1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FAD1CA1D239D29260048E4E1 /* String+Extension.swift */,
+				FAD1CA032396DD150048E4E1 /* URL+Extensions.swift */,
+				FAD1CA21239D3EDD0048E4E1 /* Date+Extension.swift */,
+				FA6B0AB523A829DF0004F7F1 /* UIColor+Extension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAD1C9D72396D4C60048E4E1 /* Clickhouse-Project-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAD1C9ED2396D4C70048E4E1 /* Build configuration list for PBXNativeTarget "Clickhouse-Project-ios" */;
+			buildPhases = (
+				FAD1C9D42396D4C60048E4E1 /* Sources */,
+				FAD1C9D52396D4C60048E4E1 /* Frameworks */,
+				FAD1C9D62396D4C60048E4E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Clickhouse-Project-ios";
+			productName = "Clickhouse-Project-ios";
+			productReference = FAD1C9D82396D4C60048E4E1 /* Clickhouse-Project-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAD1C9D02396D4C60048E4E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Alex;
+				TargetAttributes = {
+					FAD1C9D72396D4C60048E4E1 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = FAD1C9D32396D4C60048E4E1 /* Build configuration list for PBXProject "Clickhouse-Project-ios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAD1C9CF2396D4C60048E4E1;
+			productRefGroup = FAD1C9D92396D4C60048E4E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAD1C9D72396D4C60048E4E1 /* Clickhouse-Project-ios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAD1C9D62396D4C60048E4E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD1C9E92396D4C70048E4E1 /* LaunchScreen.storyboard in Resources */,
+				FAD1C9E62396D4C70048E4E1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAD1C9D42396D4C60048E4E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA6B0ADA23A987980004F7F1 /* TextFieldNumberItem.swift in Sources */,
+				FA6B0AC323A957F00004F7F1 /* LabelFieldCell.swift in Sources */,
+				FA6B0ACC23A95B500004F7F1 /* ComponentBuilder.swift in Sources */,
+				FA6B0AD823A9834E0004F7F1 /* TextFieldCell.swift in Sources */,
+				FA6B0ACE23A95BDA0004F7F1 /* ConstantNames.swift in Sources */,
+				FACCF95F23A5489C00B3B006 /* NetworkRequestBody.swift in Sources */,
+				FA6B0AC723A9591C0004F7F1 /* ItemProtocol.swift in Sources */,
+				FA6B0AC923A959270004F7F1 /* CellProtocol.swift in Sources */,
+				FAD1CA16239CF2EC0048E4E1 /* ViewGraphViewController.swift in Sources */,
+				FAD1C9F22396D6B10048E4E1 /* ChooseGraphViewController.swift in Sources */,
+				FA6B0AE023A994450004F7F1 /* ButtonItem.swift in Sources */,
+				FAD1CA14239CF1A20048E4E1 /* GraphElementModel.swift in Sources */,
+				FAD1CA12239CF1500048E4E1 /* AggregatedGraphModel.swift in Sources */,
+				FA6B0AB423A800800004F7F1 /* StartViewController.swift in Sources */,
+				FA6B0AB923A94FDC0004F7F1 /* StartTableViewController.swift in Sources */,
+				FAD1C9E42396D4C60048E4E1 /* Clickhouse_Project_ios.xcdatamodeld in Sources */,
+				FAD1C9DC2396D4C60048E4E1 /* AppDelegate.swift in Sources */,
+				FA6B0AD023A95DAE0004F7F1 /* TextFieldPickerItem.swift in Sources */,
+				FAD1CA1B239CF7700048E4E1 /* GraphViewInCell.swift in Sources */,
+				FA6B0AB223A6A8280004F7F1 /* GraphElementProtocol.swift in Sources */,
+				FAD1CA002396DC110048E4E1 /* NetworkOperation.swift in Sources */,
+				FAD1CA22239D3EDD0048E4E1 /* Date+Extension.swift in Sources */,
+				FAD1CA022396DC470048E4E1 /* NetworkResponse.swift in Sources */,
+				FA6B0AD523A96D040004F7F1 /* PickerViewElement.swift in Sources */,
+				FA6B0ADD23A98A7A0004F7F1 /* TextFieldNumberCell.swift in Sources */,
+				FAD1CA10239CF0AC0048E4E1 /* AggregatedValuesModel.swift in Sources */,
+				FA6B0ABD23A950FE0004F7F1 /* TextFieldDatePickerItem.swift in Sources */,
+				FA6B0AC523A957FB0004F7F1 /* LabelFieldItem.swift in Sources */,
+				FAD1CA042396DD150048E4E1 /* URL+Extensions.swift in Sources */,
+				FA6B0AB623A829DF0004F7F1 /* UIColor+Extension.swift in Sources */,
+				FAD1C9F72396D9820048E4E1 /* CellFactory.swift in Sources */,
+				FA6B0AD223A95DB80004F7F1 /* TextFieldPickerCell.swift in Sources */,
+				FA6B0ABB23A950EF0004F7F1 /* TextFieldDatePickerCell.swift in Sources */,
+				FAD1CA0E239AD83A0048E4E1 /* GraphElementModelAvgRain.swift in Sources */,
+				FAD1CA1E239D29260048E4E1 /* String+Extension.swift in Sources */,
+				FAD1CA19239CF36C0048E4E1 /* GraphTableViewCell.swift in Sources */,
+				FA6B0AE223A9944C0004F7F1 /* ButtonCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FAD1C9E72396D4C70048E4E1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAD1C9E82396D4C70048E4E1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAD1C9EB2396D4C70048E4E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAD1C9EC2396D4C70048E4E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAD1C9EE2396D4C70048E4E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68RG3R5754;
+				INFOPLIST_FILE = "Clickhouse-Project-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.alex.Clickhouse-Project-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FAD1C9EF2396D4C70048E4E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68RG3R5754;
+				INFOPLIST_FILE = "Clickhouse-Project-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.alex.Clickhouse-Project-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAD1C9D32396D4C60048E4E1 /* Build configuration list for PBXProject "Clickhouse-Project-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAD1C9EB2396D4C70048E4E1 /* Debug */,
+				FAD1C9EC2396D4C70048E4E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAD1C9ED2396D4C70048E4E1 /* Build configuration list for PBXNativeTarget "Clickhouse-Project-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAD1C9EE2396D4C70048E4E1 /* Debug */,
+				FAD1C9EF2396D4C70048E4E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FAD1C9E22396D4C60048E4E1 /* Clickhouse_Project_ios.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FAD1C9E32396D4C60048E4E1 /* Clickhouse_Project_ios.xcdatamodel */,
+			);
+			currentVersion = FAD1C9E32396D4C60048E4E1 /* Clickhouse_Project_ios.xcdatamodel */;
+			path = Clickhouse_Project_ios.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FAD1C9D02396D4C60048E4E1 /* Project object */;
+}
